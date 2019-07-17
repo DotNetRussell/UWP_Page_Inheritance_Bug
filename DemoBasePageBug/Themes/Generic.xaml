@@ -1,0 +1,25 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DemoBasePageBug"
+    xmlns:uwp_toolkit="using:Microsoft.Toolkit.Uwp.UI.Controls">
+
+    <Style TargetType="local:TestPage" >
+        <Setter Property="BottomAppBar">
+            <Setter.Value>
+                <AppBar Background="Transparent" x:Name="appbar" IsOpen="True">
+                    <uwp_toolkit:InAppNotification x:Name="note">
+                        <StackPanel>
+                            <TextBlock>HEADER!</TextBlock>
+                            <TextBlock>Message</TextBlock>
+                            <StackPanel Orientation="Horizontal">
+                                <Button>OK</Button>
+                                <Button>Cancel?</Button>
+                            </StackPanel>
+                        </StackPanel>
+                    </uwp_toolkit:InAppNotification>
+                </AppBar>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
