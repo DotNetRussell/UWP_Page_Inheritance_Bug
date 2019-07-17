@@ -1,4 +1,4 @@
-# UWP_Page_Inheritance_Bug
+# UWP Page Inheritance Bug
 
 
 Related Stack Overflow Question: https://stackoverflow.com/questions/57064473/creating-a-subclass-of-page-in-uwp
