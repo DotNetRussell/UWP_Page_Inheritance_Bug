@@ -30,11 +30,7 @@
                     <StackPanel>
                         <TextBlock Text="Templated Content" />
                         <!--Attempting binding to default content value-->
-                        <ContentPresenter Content="{Binding}" />
-                        
-                        <!--Attempting verbose binding to content value-->
-                        <ContentPresenter Content="{Binding Content}" />
-                        <TextBlock Text="Templated Content" />
+                        <ContentPresenter />
                     </StackPanel>
                 </ControlTemplate>
             </Setter.Value>
