@@ -22,4 +22,22 @@
             </Setter.Value>
         </Setter>
     </Style>
+
+    <Style TargetType="local:TestPage2" >
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="local:TestPage2">
+                    <StackPanel>
+                        <TextBlock Text="Templated Content" />
+                        <!--Attempting binding to default content value-->
+                        <ContentPresenter Content="{Binding}" />
+                        
+                        <!--Attempting verbose binding to content value-->
+                        <ContentPresenter Content="{Binding Content}" />
+                        <TextBlock Text="Templated Content" />
+                    </StackPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 </ResourceDictionary>
